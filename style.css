@@ -1,0 +1,128 @@
+/* ESTILIZAÇÃO DO HEADER */
+/* Geral */ 
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+header {
+width: 100%;
+
+}
+body { background-color: #D6C2A8; color: #333333; 
+font-family: 'Poppins', sans-serif;
+}
+
+.interface {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+background-color: #4e342e;
+}
+
+
+/* LOGO TEXTO */
+.logo-texto a {
+color: #fcfcfc;
+font-size: 28px;
+font-weight: 700;
+text-decoration: none;
+letter-spacing: 2px;
+}
+
+
+.logo-texto a:hover {
+color: #B89B5E;
+}
+
+
+/* MENU */
+.menu ul {
+list-style: none;
+display: flex;
+gap: 65px;
+}
+
+
+.menu a {
+text-decoration: none;
+color: #ffffff;
+font-weight: 500;
+transition: color 0.3s ease;
+}
+
+
+.menu a:hover {
+color: #B89B5E;
+}
+
+
+/* BOTÃO CONTATO */
+.Lice-contato button {
+padding: 12px 36px;
+background-color: #6B7B4A;
+color: #ffffff;
+border: none;
+border-radius: 25px;
+font-size: 15px;
+font-weight: 500;
+cursor: pointer;
+transition: transform 0.3s, background-color 0.3s;
+}
+
+
+.Lice-contato button:hover {
+background-color: #B89B5E;
+transform: scale(1.05);
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+.menu {
+display: none;
+}
+
+
+.logo-texto a {
+font-size: 22px;
+}
+}
+/* ===== SEÇÃO COMIDA ===== */
+.secao-comida {
+    width: 100%;
+    min-height: 100vh;
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("../images/doce.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.secao-comida .conteudo-comida {
+    background-color: rgba(78, 52, 46, 0.85); 
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 700px;
+    color: #ffffff;
+}
+
+.secao-comida h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #b89b5e;
+}
+
+.secao-comida p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff4f4;
+}
